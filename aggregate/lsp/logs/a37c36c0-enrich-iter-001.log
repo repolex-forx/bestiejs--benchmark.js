@@ -1,0 +1,16 @@
+[2026-04-09T19:58:24Z] === ENRICH ITERATION 1 START | repo=bestiejs/benchmark.js sha=a37c36c0 ===
+[2026-04-09T19:58:24Z] [iter=1] PHASE START: enrich repo=bestiejs/benchmark.js sha=a37c36c0 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/a37c36c0-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/a37c36c02fec8631da710de983bfd9a05586e751.nq.gz
+[2026-04-09T19:58:32Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-09T19:58:33Z] [iter=1] AST store loaded triples=157269 load_secs=1 mem_mb=309 MB
+[2026-04-09T19:58:33Z] [iter=1] Step 2: Finding LSP targets mem_mb=309 MB
+[2026-04-09T19:58:33Z] [iter=1] LSP targets found call_sites=1276 imports=0 extends=0 implements=0 secs=0
+[2026-04-09T19:58:33Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=309 MB
+[2026-04-09T19:58:34Z] [iter=1] Position index built positions=11034 nodes_with_types=12668 secs=1 mem_mb=309 MB
+[2026-04-09T19:58:34Z] [iter=1] Step 3: Starting LSP resolution mem_mb=309 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T19:58:34Z] [iter=1] Resolving target type target_type=call_site count=1276
+[2026-04-09T19:58:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=1 resolved=0 errors=336 current=test/test.js
+[2026-04-09T19:59:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=2 resolved=4 errors=887 current=plugin/ui.browserscope.js
+[2026-04-09T19:59:43Z] [iter=1] Target type resolved target_type=call_site resolved=19 errors=1121 secs=69 mem_mb=309 MB
+[2026-04-09T19:59:45Z] [iter=1] Step 5: Writing final enrichment file triples=11769
+[2026-04-09T19:59:45Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/a37c36c02fec8631da710de983bfd9a05586e751.nq.gz size_kb=183
+[2026-04-09T19:59:45Z] [iter=1] PHASE END: enrich elapsed_s=81 elapsed_min=1.3 total_triples=11769
